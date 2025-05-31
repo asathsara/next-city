@@ -11,18 +11,32 @@
 
 <body>
     <nav class="navbar">
-        <div class="navbar-left">Next City</div>
+        <div class="navbar-left"><a href="../home.html" style="text-decoration:none;color:inherit;">Next City</a></div>
         <div class="navbar-center">
             <a href="../forum/forum.html">Forum</a>
             <a href="../issues/issues.html">Issues</a>
             <a href="../solutions/solutions.html">Solutions</a>
             <a href="../events/events.html">Events</a>
         </div>
+        <button class="navbar-menu-btn" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <div class="navbar-right">
             <button class="contact-btn">Contact us</button>
         </div>
     </nav>
+    <div class="nav-drawer-overlay"></div>
+    <aside class="nav-drawer">
+        <button class="nav-drawer-close" aria-label="Close menu">&times;</button>
+        <a href="../forum/forum.html">Forum</a>
+        <a href="../issues/issues.html">Issues</a>
+        <a href="../solutions/solutions.html">Solutions</a>
+        <a href="../events/events.html">Events</a>
+    </aside>
     <h1>solutions</h1>
+    <script src="../base.js"></script>
     <script src="solutions.js"></script>
 </body>
 
