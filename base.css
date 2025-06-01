@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 html {
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to bottom, #f8fafc 0%, #e3eafc 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f8fafc 0%, #e3eafc 100%);
 }
 
-*{
+* {
     font-family: "Lexend", sans-serif;
 }
 
@@ -18,20 +18,23 @@ html {
     justify-content: flex-start;
     padding: 24px;
 }
+
 .navbar-left {
-    font-size: 1.35rem; 
-    font-weight: 700;    
-    color: #0d141c;      
-    line-height: 1.25;   
-    letter-spacing: -0.015em; 
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #0d141c;
+    line-height: 1.25;
+    letter-spacing: -0.015em;
     margin-right: 32px;
 }
+
 .navbar-center {
     flex: 1;
     display: flex;
     justify-content: center;
     gap: 32px;
 }
+
 .navbar-center a {
     color: #174ea6;
     text-decoration: underline;
@@ -39,13 +42,16 @@ html {
     font-weight: 500;
     transition: color 0.2s;
 }
+
 .navbar-center a:hover {
     color: #0b2547;
 }
+
 .navbar-right {
     display: flex;
     align-items: center;
 }
+
 .contact-btn {
     background: #3367d6;
     color: #fff;
@@ -57,6 +63,7 @@ html {
     cursor: pointer;
     transition: background 0.2s;
 }
+
 .contact-btn:hover {
     background: #174ea6;
 }
@@ -74,6 +81,7 @@ html {
     margin-left: 0;
     margin-right: 16px;
 }
+
 .navbar-menu-btn span {
     display: block;
     height: 4px;
@@ -88,20 +96,26 @@ html {
 .nav-drawer-overlay {
     display: none;
     position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.2);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
+
 .nav-drawer-overlay.open {
     display: block;
 }
+
 .nav-drawer {
     position: fixed;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 240px;
     background: #fff;
-    box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.08);
     z-index: 1001;
     transform: translateX(-100%);
     transition: transform 0.2s;
@@ -109,9 +123,11 @@ html {
     flex-direction: column;
     padding: 32px 16px 16px 24px;
 }
+
 .nav-drawer.open {
     transform: translateX(0);
 }
+
 .nav-drawer-close {
     background: none;
     border: none;
@@ -121,6 +137,7 @@ html {
     cursor: pointer;
     margin-bottom: 24px;
 }
+
 .nav-drawer a {
     color: #174ea6;
     text-decoration: underline;
@@ -129,22 +146,33 @@ html {
     margin-bottom: 18px;
     display: block;
 }
+
 .nav-drawer a:last-child {
     margin-bottom: 0;
 }
 
+/* Hero title fade animation */
+.hero-title {
+    transition: opacity 0.6s;
+}
 
+.hero-title.fade {
+    opacity: 0;
+}
 
 @media (max-width: 800px) {
     .navbar-center {
         display: none;
     }
+
     .navbar-menu-btn {
         display: flex;
     }
+
     .navbar {
         justify-content: flex-start;
     }
+
     .navbar-right {
         margin-left: auto;
     }
