@@ -1,2 +1,82 @@
-/* issues.css */
-h1 { color: #333; }
+/* issues.css - cloned and adapted from events.css */
+
+#issues-app {
+    max-width: 960px;
+    margin: auto;
+    padding: 24px 16px;
+}
+.issues-title {
+    color: #222a36;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.issues-search-row {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.issues-search {
+    padding: 10px 16px;
+    font-size: 1rem;
+    border: 1px solid #c0d4e6;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.issue-top-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    animation: float 4s ease-in-out infinite;
+}
+.issue-card {
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #d8e6f3;
+    border-radius: 14px;
+    padding: 16px;
+    margin-top: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.issue-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.issue-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2f80ed;
+}
+.issue-date {
+    font-size: 0.75rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+.issue-description {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 16px;
+}
+.issue-tag {
+    display: inline-block;
+    background: #dbefff;
+    color: #2f80ed;
+    padding: 4px 10px;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    margin-top: 12px;
+}
+@media (max-width: 700px) {
+    .issues-title {
+        font-size: 1.4rem;
+    }
+    .issue-top-image {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 18px auto;
+        display: block;
+    }
+}

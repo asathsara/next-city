@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>issues</title>
+    <title>Issues</title>
     <link rel="stylesheet" href="../base.css">
     <link rel="stylesheet" href="issues.css">
+    <link rel="stylesheet" href="../animations.css">
     <link rel="icon" type="image/png" href="../assets/icon.png">
 </head>
 
@@ -36,7 +37,37 @@
         <a href="../solutions/solutions.html">Solutions</a>
         <a href="../events/events.html">Events</a>
     </aside>
-    <h1>issues</h1>
+    <div id="issues-app">
+        <h1 class="issues-title">Current City Issues</h1>
+        <div class="issues-search-row">
+            <input type="text" id="issue-search" class="issues-search" placeholder="Search issues" />
+        </div>
+        <img src="../assets/issues.png" alt="Issues" class="issue-top-image" />
+        <li class="issue-card">
+            <div class="issue-title">Potholes on Main Street</div>
+            <div class="issue-date">Reported: June 2, 2025</div>
+            <div class="issue-description">
+                Multiple potholes have appeared after recent rains, causing traffic delays and vehicle damage.
+            </div>
+            <div class="issue-tag">Road</div>
+        </li>
+        <li class="issue-card">
+            <div class="issue-title">Broken Streetlights in Park</div>
+            <div class="issue-date">Reported: June 1, 2025</div>
+            <div class="issue-description">
+                Several streetlights are not working, making the park unsafe at night for pedestrians.
+            </div>
+            <div class="issue-tag">Safety</div>
+        </li>
+        <li class="issue-card">
+            <div class="issue-title">Overflowing Trash Bins</div>
+            <div class="issue-date">Reported: May 30, 2025</div>
+            <div class="issue-description">
+                Trash bins in the downtown area are overflowing and need urgent collection.
+            </div>
+            <div class="issue-tag">Sanitation</div>
+        </li>
+    </div>
     <script src="../base.js"></script>
     <script src="issues.js"></script>
 </body>
