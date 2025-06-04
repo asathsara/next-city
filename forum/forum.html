@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>forum</title>
     <link rel="stylesheet" href="../base.css">
-    <link rel="stylesheet" href="forum-app.css">
+    <link rel="stylesheet" href="forum.css">
+    <link rel="stylesheet" href="../animations.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <link rel="icon" type="image/png" href="../assets/icon.png">
 </head>
 
 <body>
@@ -39,24 +41,44 @@
 
     <div id="forum-app">
         <h1 class="forum-title">Feedback Forum</h1>
-        <div class="forum-desc">Share your thoughts, suggestions, and concerns about our smart city initiatives. Your
-            feedback helps us improve and innovate.</div>
-        <div class="forum-form-row">
-            <form @submit.prevent="addComment" class="forum-form">
-                <textarea v-model="newComment" placeholder="Enter your feedback here" class="forum-textarea"></textarea>
-                <button type="submit" class="forum-btn">Submit Feedback</button>
-            </form>
-            <img src="../assets/forum.png" alt="Forum" class="forum-image" />
-        </div>
-        <h2 style="margin-top:48px; font-size:1.4rem; font-weight:700;">Community Feedback</h2>
+        <p class="forum-desc">
+            Share your thoughts, suggestions, and concerns about our smart city initiatives.
+            Your feedback helps us improve and innovate.
+        </p>
+
+
+
+        <!-- Form Section -->
+        <form @submit.prevent="addComment" class="forum-form">
+
+            <img src="/assets/forum.png" alt="Feedback" class="forum-top-image" />
+
+            <textarea v-model="newComment" placeholder="Enter your feedback here" class="forum-textarea"></textarea>
+            <button type="submit" class="forum-btn">Submit Feedback</button>
+        </form>
+
+
+
+        <h2 class="forum-subtitle">Community Feedback</h2>
+
         <ul class="forum-list">
-            <li v-for="(comment, idx) in comments" :key="idx" class="forum-comment">
-                <div class="forum-comment-text">{{ comment.text }}</div>
-                <div class="forum-comment-time">{{ comment.time }}</div>
+            <li v-for="(comment, index) in comments" :key="index" class="forum-comment">
+                <div class="forum-avatar">
+                    <img src="https://i.pravatar.cc/48?img={{ index + 1 }}" alt="User avatar" />
+                </div>
+                <div class="forum-content">
+                    <div class="forum-meta">
+                        <strong>User {{ index + 1 }}</strong>
+                        <span class="forum-time">{{ comment.time }}</span>
+                    </div>
+                    <div class="forum-text">{{ comment.text }}</div>
+                </div>
             </li>
         </ul>
     </div>
-    <script src="forum-app.js"></script>
+
+
+    <script src="forum.js"></script>
 </body>
 
 </html>

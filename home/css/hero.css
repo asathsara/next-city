@@ -25,14 +25,10 @@
     position: relative;
     transform: translateY(-15%);
     z-index: 2;
-    animation: city-float 4s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
 }
 
-@keyframes city-float {
-    0% { transform: translateY(-5%) scale(1); }
-    50% { transform: translateY(-8%) scale(1.01); }
-    100% { transform: translateY(-5%) scale(1); }
-}
+
 
 @media (max-width: 700px) {
     .hero-title {

@@ -1,43 +1,86 @@
-/* forum.css */
-h1 { color: #333; }
+#forum-app {
+    max-width: 960px;
+    margin: auto;
+}
 
-/* forum-app.css: Simple Vue.js forum styles */
-.forum-vue {
-    max-width: 500px;
-    margin: 40px auto;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 12px #0001;
-    padding: 32px 24px 24px 24px;
+.forum-title {
+    color: #222a36;
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.forum-desc {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 30px;
 }
 
 .forum-form {
+    width: 100%;
+    margin: 0 auto;
     display: flex;
-    gap: 8px;
-    margin-bottom: 24px;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.forum-input {
-    flex: 1;
-    padding: 8px 12px;
-    border-radius: 6px;
-    border: 1px solid #b3cfe9;
+.forum-top-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    animation: float 4s ease-in-out infinite;
+}
+
+.forum-textarea {
+    resize: vertical;
+    min-height: 120px;
+    padding: 16px;
     font-size: 1rem;
+    border: 1px solid #c0d4e6;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 12px;
 }
 
 .forum-btn {
-    background: #3367d6;
-    color: #fff;
+    align-self: flex-end;
+    background-color: #2f80ed;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
     border: none;
-    border-radius: 6px;
-    padding: 8px 18px;
-    font-size: 1rem;
+    border-radius: 24px;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: background-color 0.2s;
 }
 
 .forum-btn:hover {
-    background: #174ea6;
+    background-color: #1366d6;
+}
+
+.forum-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+.forum-filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.forum-filter-btn {
+    background: #dbefff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.forum-filter-btn:hover {
+    background: #b3daff;
 }
 
 .forum-list {
@@ -47,20 +90,42 @@ h1 { color: #333; }
 }
 
 .forum-comment {
-    background: #f8fafc;
-    border-radius: 6px;
-    margin-bottom: 12px;
-    padding: 12px 16px;
-    box-shadow: 0 1px 4px #0001;
+    display: flex;
+    gap: 16px;
+    background-color: #ffffff;
+    border: 1px solid #d8e6f3;
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
-.forum-comment-text {
-    font-size: 1.05rem;
-    margin-bottom: 4px;
+.forum-avatar img {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
 }
 
-.forum-comment-time {
-    font-size: 0.85rem;
-    color: #888;
-    text-align: right;
+.forum-content {
+    flex: 1;
+}
+
+.forum-meta {
+    font-size: 0.95rem;
+    color: #444;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.forum-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+
+@media (max-width: 960px) {
+    #forum-app {
+        margin: 16px;
+    }
 }
