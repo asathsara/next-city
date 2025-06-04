@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>solutions</title>
+    <title>Solutions</title>
     <link rel="stylesheet" href="../base.css">
     <link rel="stylesheet" href="solutions.css">
+    <link rel="stylesheet" href="../animations.css">
     <link rel="icon" type="image/png" href="../assets/icon.png">
 </head>
 
@@ -36,7 +37,37 @@
         <a href="../solutions/solutions.html">Solutions</a>
         <a href="../events/events.html">Events</a>
     </aside>
-    <h1>solutions</h1>
+    <div id="solutions-app">
+        <h1 class="solutions-title">Proposed City Solutions</h1>
+        <div class="solutions-search-row">
+            <input type="text" id="solution-search" class="solutions-search" placeholder="Search solutions" />
+        </div>
+        <img src="../assets/solutions.jpg" alt="Solutions" class="solution-top-image" />
+        <li class="solution-card">
+            <div class="solution-title">Smart Traffic Lights</div>
+            <div class="solution-date">Proposed: June 5, 2025</div>
+            <div class="solution-description">
+                Implement adaptive traffic lights to reduce congestion and improve emergency vehicle response times.
+            </div>
+            <div class="solution-tag">Technology</div>
+        </li>
+        <li class="solution-card">
+            <div class="solution-title">Community Recycling Program</div>
+            <div class="solution-date">Proposed: June 3, 2025</div>
+            <div class="solution-description">
+                Launch a city-wide recycling initiative with incentives for households and businesses.
+            </div>
+            <div class="solution-tag">Environment</div>
+        </li>
+        <li class="solution-card">
+            <div class="solution-title">Urban Green Spaces</div>
+            <div class="solution-date">Proposed: May 28, 2025</div>
+            <div class="solution-description">
+                Develop more parks and green rooftops to improve air quality and provide recreation areas for residents.
+            </div>
+            <div class="solution-tag">Community</div>
+        </li>
+    </div>
     <script src="../base.js"></script>
     <script src="solutions.js"></script>
 </body>
