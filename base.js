@@ -1,5 +1,4 @@
 // base.js - Handles responsive navbar and navigation drawer
-
 document.addEventListener('DOMContentLoaded', function() {
     const menuBtn = document.querySelector('.navbar-menu-btn');
     const drawer = document.querySelector('.nav-drawer');
@@ -21,23 +20,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Hero title text animation
-    const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) {
-        const phrases = [
-            'Your City. Reimagined',
-            'Smart. Connected. Green.',
-            'Welcome to the Future',
-            'Next City: For Everyone'
-        ];
-        let idx = 0;
-        setInterval(() => {
-            heroTitle.classList.add('fade');
-            setTimeout(() => {
-                idx = (idx + 1) % phrases.length;
-                heroTitle.textContent = phrases[idx];
-                heroTitle.classList.remove('fade');
-            }, 600);
-        }, 3200);
-    }
+    
 });

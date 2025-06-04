@@ -1,19 +1,18 @@
-// forum.js
-// forum-app.js
-// Simple Vue.js forum app for posting and viewing comments
-
+// forum-app.js - Simple Vue 3 feedback forum
 const ForumApp = {
   data() {
     return {
       newComment: '',
-      comments: []
+      comments: [
+        // Example starter comments (can be empty)
+      ]
     };
   },
   methods: {
     addComment() {
       const text = this.newComment.trim();
       if (text) {
-        this.comments.push({
+        this.comments.unshift({
           text,
           time: new Date().toLocaleString()
         });
@@ -22,5 +21,4 @@ const ForumApp = {
     }
   }
 };
-
 Vue.createApp(ForumApp).mount('#forum-app');

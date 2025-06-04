@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'Your City. Reimagined',
             'Smart. Connected. Green.',
             'Next City: For Everyone',
-            'Colombo 2.0: A New Era'
+            'Gampaha 2.0: A New Era'
         ];
         let idx = 0;
         setInterval(() => {

@@ -1,0 +1,14 @@
+<!-- forum-app.html: Vue.js forum UI -->
+<div id="forum-app" class="forum-vue">
+    <h2>Forum</h2>
+    <form @submit.prevent="addComment" class="forum-form">
+        <input v-model="newComment" placeholder="Write a comment..." class="forum-input" />
+        <button type="submit" class="forum-btn">Post</button>
+    </form>
+    <ul class="forum-list">
+        <li v-for="(comment, idx) in comments" :key="idx" class="forum-comment">
+            <div class="forum-comment-text">{{ comment.text }}</div>
+            <div class="forum-comment-time">{{ comment.time }}</div>
+        </li>
+    </ul>
+</div>
