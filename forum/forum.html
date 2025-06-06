@@ -62,11 +62,11 @@
         <ul class="forum-list">
             <li v-for="(comment, index) in comments" :key="index" class="forum-comment">
                 <div class="forum-avatar">
-                    <img src="https://i.pravatar.cc/48?img={{ index + 1 }}" alt="User avatar" />
+                    <img src="../assets/user.png" alt="User avatar" />
                 </div>
                 <div class="forum-content">
                     <div class="forum-meta">
-                        <strong>User {{ index + 1 }}</strong>
+                        <strong>Gampaha User {{ index + 1 }}</strong>
                         <span class="forum-time">{{ comment.time }}</span>
                     </div>
                     <div class="forum-text">{{ comment.text }}</div>

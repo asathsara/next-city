@@ -143,6 +143,72 @@
         </div>
 
     </section>
+
+    <section id="route-tracker-section">
+        <div class="title-group">
+            <h2 class="title">Route Planning Tracker</h2>
+            <span class="subtitle">Plan your trip from Gampaha to nearby cities</span>
+        </div>
+
+        <div class="card route-tracker-card">
+            <div class="route-tracker-left">
+                <div id="route-tracker">
+                    <label for="fromCity">From:</label>
+                    <select id="fromCity" disabled>
+                        <option value="Gampaha">Gampaha</option>
+                    </select>
+
+                    <label for="toCity">To:</label>
+                    <select id="toCity">
+                        <option value="" disabled selected>Select city</option>
+                        <option value="Colombo">Colombo</option>
+                        <option value="Yakkala">Yakkala</option>
+                        <option value="Negombo">Negombo</option>
+                        <option value="Minuwangoda">Minuwangoda</option>
+                        <option value="Ja-Ela">Ja-Ela</option>
+                        <option value="Wattala">Wattala</option>
+                        <option value="Kelaniya">Kelaniya</option>
+                        <option value="Ragama">Ragama</option>
+                        <option value="Kadawatha">Kadawatha</option>
+                        <option value="Kiribathgoda">Kiribathgoda</option>
+                        <option value="Veyangoda">Veyangoda</option>
+                        <option value="Divulapitiya">Divulapitiya</option>
+                        <option value="Seeduwa">Seeduwa</option>
+                    </select>
+                </div>
+
+               
+                <table id="routeTable" class="vertical-table">
+                    <tbody>
+                        <tr>
+                            <th>From</th>
+                            <td class="from"></td>
+                        </tr>
+                        <tr>
+                            <th>To</th>
+                            <td class="to"></td>
+                        </tr>
+                        <tr>
+                            <th>Distance (km)</th>
+                            <td class="distance"></td>
+                        </tr>
+                        <tr>
+                            <th>Estimated Time</th>
+                            <td class="time"></td>
+                        </tr>
+                        <tr>
+                            <th>Transport Mode</th>
+                            <td class="mode"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Right side: Image -->
+            <img src="assets/route.png" alt="Route Planning" class="energy-usage-image" />
+        </div>
+    </section>
+
     <script src="home/js/home.js"></script>
 </body>
 
