@@ -82,3 +82,13 @@ h1 {
     font-size: 0.8rem;
     margin-top: 12px;
 }
+
+.solution-image{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-top: 2rem;
+    background: #f8fafc;
+}

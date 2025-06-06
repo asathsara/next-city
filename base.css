@@ -160,6 +160,34 @@ html {
     opacity: 0;
 }
 
+/* Footer styles */
+.footer {
+    width: 100%;
+    background: #e6eef9;
+    color: #1a365d;
+    text-align: center;
+    padding: 1.2rem 0 1rem 0;
+    font-size: 1rem;
+    margin-top: 2.5rem;
+    border-top: 1px solid #c3d3e7;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+    }
+}
+
 @media (max-width: 800px) {
     .navbar-center {
         display: none;
