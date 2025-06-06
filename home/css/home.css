@@ -1,4 +1,4 @@
-.city-section {
+section {
     max-width: 1400px;
     margin: 2rem auto;
     padding: 2rem;
@@ -6,12 +6,7 @@
     opacity: 1;
 }
 
-.city-header {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 1.5rem;
-}
+
 
 .gampaha-city {
     width: 100%;
@@ -24,31 +19,32 @@
     background: #f8fafc;
 }
 
-.city-title-group {
+.title-group {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
+    margin-bottom: 1.2rem;
 }
 
-.city-title {
+.title {
     font-size: 2.2rem;
     font-weight: 700;
     color: #1a365d;
     margin: 0;
 }
 
-.city-subtitle {
+.subtitle {
     font-size: 1.1rem;
     color: #4b6fa5;
     font-weight: 500;
     letter-spacing: 0.03em;
 }
 
-.city-overview.card {
+.card {
     margin-top: 32px;
     background: #f4f8fb;
     border-radius: 14px;
-    padding: 1.5rem 1.2rem;
+    padding: 1.5rem 1.2rem 1.5rem 2rem;
     box-shadow: 0 2px 8px rgba(30, 64, 175, 0.06);
 }
 
@@ -59,12 +55,97 @@
     font-weight: 600;
 }
 
-.city-overview p {
+.card p {
     font-size: 1.08rem;
     color: #24324d;
     line-height: 1.7;
     margin: 0;
 }
+
+.energy-tracker-card {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    align-items: center;
+}
+
+
+#tracker {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+#tracker label {
+    display: block;
+    font-weight: 500;
+    color: #1a365d;
+    margin-bottom: 0.4rem;
+}
+
+#tracker input[type="date"]{
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #b6c6e3;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #24324d;
+    background: #f8fafc;
+    margin-bottom: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+
+
+
+.energy-usage-image {
+    flex: 0 0 45%;
+    max-width: 200px;
+    max-height: 420px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#dataTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    object-fit: contain;
+}
+
+#dataTable th,
+#dataTable td {
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #d0d7e5;
+    text-align: left;
+}
+
+#dataTable th {
+    background-color: #e6eef9;
+    color: #1a365d;
+}
+
+
+@media (max-width: 768px) {
+    .energy-tracker-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #tracker,
+    .energy-usage-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .energy-usage-image  {
+        margin-top: 1rem;
+    }
+    
+}
+
 
 @media (max-width: 600px) {
     .enhanced-city-section {
@@ -86,4 +167,3 @@
         font-size: 1.4rem;
     }
 }
-
