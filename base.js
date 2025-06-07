@@ -1,4 +1,3 @@
-// base.js - Handles responsive navbar and navigation drawer
 document.addEventListener('DOMContentLoaded', function() {
     const menuBtn = document.querySelector('.navbar-menu-btn');
     const drawer = document.querySelector('.nav-drawer');
