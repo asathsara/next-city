@@ -39,39 +39,161 @@
     </aside>
     <div id="solutions-app">
         <h1 class="solutions-title">Proposed City Solutions</h1>
-        <div class="solutions-search-row">
-            <input type="text" id="solution-search" class="solutions-search" placeholder="Search solutions" />
-        </div>
-        <img src="../assets/solutions.jpg" alt="Solutions" class="solution-top-image" />
-        <li class="solution-card">
-            <div class="solution-title">Flood Mitigation Along Aththanagalu Oya</div>
-            <div class="solution-date">Proposed: June 6, 2025</div>
-            <div class="solution-description">
-                Construct and maintain flood retention basins and improve drainage infrastructure along Aththanagalu Oya
-                to prevent seasonal overflows in Gampaha.
-            </div>
-            <div class="solution-tag">Infrastructure</div>
 
-            <img src="https://cdn.hirunews.lk/Data/News_Images/201605/1463556610_3775545_hirunews_bjnkldsa.jpg" alt="Gampaha" class="solution-image" />
-        </li>
-        <li class="solution-card">
-            <div class="solution-title">Traffic Flow Optimization in Gampaha</div>
-            <div class="solution-date">Proposed: June 5, 2025</div>
-            <div class="solution-description">
-                Introduce synchronized traffic signals and reroute heavy vehicles during school hours to reduce
-                congestion on main roads such as Colombo–Gampaha Road.
+        <img src="../assets/solutions.jpg" alt="Solutions" class="solution-top-image" />
+
+        <!-- TRAFFIC MANAGEMENT -->
+        <section class="card traffic-card">
+            <h2>Traffic Management</h2>
+            <p class="tip">
+                We have introduced a smart traffic management system that uses real-time data to optimize traffic flow and reduce congestion. This system will help improve travel times by up to 30% during peak hours.
+                The system includes traffic cameras, sensors, and AI algorithms to monitor and manage traffic signals dynamically based on current conditions.
+            </p>
+
+            <!-- current status -->
+            <div class="traffic-now">
+                <span id="traffic-time"></span>
+                <span id="traffic-status" class="traffic-badge"></span>
             </div>
-            <div class="solution-tag">Transport</div>
-        </li>
-        <li class="solution-card">
-            <div class="solution-title">Scheduled Waste Collection System</div>
-            <div class="solution-date">Proposed: June 4, 2025</div>
-            <div class="solution-description">
-                Implement a zoned waste collection timetable in Gampaha with community awareness campaigns to reduce
-                illegal dumping and improve sanitation.
-            </div>
-            <div class="solution-tag">Sanitation</div>
-        </li>
+
+            <img id="traffic-img" src="../assets/traffic.jpg" alt="Traffic status image" />
+
+            <!-- timetable -->
+            <table class="traffic-table">
+                <thead>
+                    <tr>
+                        <th>Time (h)</th>
+                        <th>Condition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-from="0" data-to="6">
+                        <td>00 - 06</td>
+                        <td>No traffic</td>
+                    </tr>
+                    <tr data-from="6" data-to="9">
+                        <td>06 - 09</td>
+                        <td>Heavy traffic</td>
+                    </tr>
+                    <tr data-from="9" data-to="13">
+                        <td>09 - 13</td>
+                        <td>Low traffic</td>
+                    </tr>
+                    <tr data-from="13" data-to="15">
+                        <td>13 - 15</td>
+                        <td>Heavy traffic</td>
+                    </tr>
+                    <tr data-from="15" data-to="17">
+                        <td>15 - 17</td>
+                        <td>Low traffic</td>
+                    </tr>
+                    <tr data-from="17" data-to="20">
+                        <td>17 - 20</td>
+                        <td>Heavy traffic</td>
+                    </tr>
+                    <tr data-from="20" data-to="24">
+                        <td>20 - 24</td>
+                        <td>Low traffic</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="tip">
+                ⓘ Tip: plan school drop-offs 15 min earlier when status is
+                <strong>heavy traffic</strong> to avoid junction bottlenecks.
+            </p>
+        </section>
+
+
+        <!-- WASTE MANAGEMENT -->
+        <section class="card waste-card">
+            <h2>Waste Collection Schedule</h2>
+
+            <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+                <thead style="background-color: #f2f2f2;">
+                    <tr>
+                        <th>Day</th>
+                        <th>Collection Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>07:00 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>07:30 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>08:00 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>06:30 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>07:15 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>06:45 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <p class="tip">
+                ⓘ Tip: In 3.0 we will introduce a smart bin system that alerts you when bins are full and optimizes collection routes based on real-time data. This will reduce collection costs by 20% and improve service efficiency.
+                Currently, please ensure bins are out by 7:00 AM on collection days to avoid missed pickups.
+                locations.
+            </p>
+        </section>
+
+        <!-- ENERGY MANAGEMENT -->
+        <section class="card energy-card">
+            <h2>Energy Usage Dashboard</h2>
+
+            <table class="energy-table">
+                <thead>
+                    <tr>
+                        <th>Time Slot (h)</th>
+                        <th>Average Load (MW)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>00 - 06</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>06 - 12</td>
+                        <td>110</td>
+                    </tr>
+                    <tr>
+                        <td>12 - 18</td>
+                        <td>140</td>
+                    </tr>
+                    <tr>
+                        <td>18 - 24</td>
+                        <td>190</td>
+                    </tr>
+                    <!-- add more rows as required -->
+                </tbody>
+            </table>
+
+            <p class="tip">
+                ⓘ Tip: shifting heavy-load appliances to off-peak slots can reduce your bill by 15 %.
+            </p>
+        </section>
+
+    </div>
 
     </div>
     <footer class="footer">
@@ -81,7 +203,7 @@
         </div>
     </footer>
     <script src="../base.js"></script>
-    <script src="solutions.js"></script>
+    <script src="solution.js"></script>
 </body>
 
 </html>

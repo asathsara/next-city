@@ -83,7 +83,7 @@ h1 {
     margin-top: 12px;
 }
 
-.solution-image{
+.solution-image {
     width: 100%;
     height: auto;
     display: block;
@@ -92,3 +92,92 @@ h1 {
     margin-top: 2rem;
     background: #f8fafc;
 }
+
+
+
+.card {
+    background: #fff;
+    border: 1px solid #d8e6f3;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-top: 24px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .05);
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    color: #2f80ed;
+    margin-bottom: 12px;
+}
+
+
+.traffic-now {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .05);
+    padding: 2rem;
+    border-radius: 8px;
+    align-items: center;
+    background-color: #fafcff;
+    margin: 16px 0;
+}
+
+#traffic-time {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #445;
+}
+
+
+
+
+.traffic-badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    background: #dbefff;
+    color: #2f80ed;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-transform: capitalize;
+}
+
+.traffic-card img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 12px 0;
+}
+
+/* --- tables --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+th,
+td {
+     padding: 0.6rem 0.8rem;
+    border: 1px solid #d0d7e5;
+    text-align: left;
+}
+
+thead th {
+    background-color: #e6eef9;
+    color: #1a365d;
+}
+
+
+.tip {
+    margin-top: 2rem;
+    font-size: .9rem;
+    color: #445;
+}
+
+.current-row {
+    background: #fff8e1;
+    font-weight: 600;
+}
+
