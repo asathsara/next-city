@@ -12,9 +12,9 @@ function updateTrafficStatus() {
         status = "It's early morning. Roads are mostly clear.";
     } else if (hour >= 6 && hour < 9) {
         status = "Morning rush hour. Expect heavy traffic on key roads.";
-    } else if (hour >= 9 && hour < 13) {
+    } else if (hour >= 9 && hour < 12) {
         status = "Late morning traffic is light. Good time to travel.";
-    } else if (hour >= 13 && hour < 15) {
+    } else if (hour >= 12 && hour < 15) {
         status = "School Times. Plan for possible delays.";
     } else if (hour >= 15 && hour < 17) {
         status = "Traffic is lightening up before evening rush.";
