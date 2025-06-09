@@ -8,17 +8,23 @@ function updateTrafficStatus() {
 
     let status = '';
 
-    if (hour >= 6 && hour < 12) {
-        status = "Morning rush hour is over. Traffic is lightening up.";
-    } else if (hour >= 12 && hour < 17) {
-        status = "Midday traffic is moderate. Some congestion expected near city centers.";
-    } else if (hour >= 17 && hour < 22) {
-        status = "Evening rush hour. Expect heavy traffic on major roads.";
-    } else {
-        status = "It's late. Roads are mostly clear.";
+    if (hour >= 0 && hour < 6) {
+        status = "It's early morning. Roads are mostly clear.";
+    } else if (hour >= 6 && hour < 9) {
+        status = "Morning rush hour. Expect heavy traffic on key roads.";
+    } else if (hour >= 9 && hour < 13) {
+        status = "Late morning traffic is light. Good time to travel.";
+    } else if (hour >= 13 && hour < 15) {
+        status = "School Times. Plan for possible delays.";
+    } else if (hour >= 15 && hour < 17) {
+        status = "Traffic is lightening up before evening rush.";
+    } else if (hour >= 17 && hour < 20) {
+        status = "Evening rush hour. Heavy traffic on main roads.";
+    } else if (hour >= 20 && hour < 24) {
+        status = "Night time traffic is low. Roads are mostly clear.";
     }
 
-    
+
     document.getElementById('traffic-status').textContent = status;
 }
 

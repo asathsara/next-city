@@ -47,13 +47,12 @@
         </p>
 
         <!-- Form Section -->
-        <form @submit.prevent="addComment" class="forum-form">
-
+        <div class="forum-form">
             <img src="/assets/forum.png" alt="Feedback" class="forum-top-image" />
 
             <textarea v-model="newComment" placeholder="Enter your feedback here" class="forum-textarea"></textarea>
-            <button type="submit" class="forum-btn">Submit Feedback</button>
-        </form>
+            <button @click="addComment" class="forum-btn">Submit Feedback</button>
+        </div>
 
 
 
