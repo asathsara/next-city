@@ -27,6 +27,10 @@ html {
     letter-spacing: -0.015em;
     margin-right: 32px;
 }
+.navbar-left a{
+    text-decoration: none;
+    color: inherit;
+}
 
 .navbar-center {
     flex: 1;
